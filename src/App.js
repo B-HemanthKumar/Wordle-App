@@ -1,7 +1,9 @@
 
 import { createContext, useEffect, useState } from 'react';
 import './App.css';
+import "./Components/DarkMode/DarkMode";
 import Board from './Components/Board/Board';
+import DarkMode from './Components/DarkMode/DarkMode';
 import GameOver from './Components/GameOver/GameOver';
 import Keyboard from './Components/Keyboard/Keyboard';
 import { boardwordle, generateWords } from './Components/Words/Word';
@@ -86,10 +88,11 @@ function App() {
 
   }
 
-
   return (
-    <div className="wordlecon">
-      <header><h1>Wordle</h1></header>
+    <>
+    
+    <div className="wordlecont"> 
+      <header><h1>Wordle</h1></header> <DarkMode />
       <AppContext.Provider value={{board,setBoard,correctWord,wordSet,
         setCorrectWord,currentAttempt,setCurrAttempt,gameOver,setGameOver,
         disabledLetters,setDisabledLetters,almostLetters,setAlmostLetters,correctLetters,setCorrectLetters,
@@ -106,6 +109,7 @@ function App() {
       <span className="created"> Created By HEMANTH KUMAR.B </span>
     
     </div>
+    </>
   );
 }
 

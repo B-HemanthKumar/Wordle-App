@@ -1,0 +1,23 @@
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+button{
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 30px;
+    padding: 4px;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+}
