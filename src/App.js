@@ -66,6 +66,7 @@ function App() {
     if(currWord.toLowerCase() === correctWord){
       alert("Congratulations, You won!")
       setGameOver({gameOver:true,guessedWord:true})
+      return;
     }
 
     if(currentAttempt.attempt === 5){
