@@ -3,7 +3,7 @@ import { AppContext } from '../../App'
 
 export default function GameOver() {
 
-  const {currentAttempt,gameOver,correctWord} = useContext(AppContext)
+  const {currentAttempt,gameOver,correctWord,setGameOver} = useContext(AppContext)
 
 
 
