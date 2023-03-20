@@ -70,7 +70,7 @@ function App() {
       return;
     }
 
-    if(currentAttempt.attempt === 4){
+    if(currentAttempt.attempt === 5){
       alert("Game Over")
       setGameOver({gameOver:true,guessedWord:false})
       return;
