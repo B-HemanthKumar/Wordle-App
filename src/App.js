@@ -49,7 +49,8 @@ function App() {
   }
 
   const onEnter=()=>{
-    if(currentAttempt.letterPoss !== 5) return
+    if(currentAttempt.letterPoss !== 5) 
+      return;
 
     let currWord =""
     for(let i=0;i<5;i++){
@@ -91,8 +92,7 @@ function App() {
 
   return (
     <>
-    
-    <div className="wordlecont"> 
+     <div className="wordlecont"> 
       <header><h1>Wordle</h1></header> <DarkMode />
       <AppContext.Provider value={{board,setBoard,correctWord,wordSet,
         setCorrectWord,currentAttempt,setCurrAttempt,gameOver,setGameOver,
